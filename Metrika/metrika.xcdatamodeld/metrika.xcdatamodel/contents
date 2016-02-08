@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="12F45" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="YMAbstractChildEntity" representedClassName="YMAbstractChildEntity" isAbstract="YES" syncable="YES">
+        <attribute name="lang" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentDateEnd" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="parentDateStart" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="parentId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="token" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="YMAbstractEntity" representedClassName="YMAbstractEntity" isAbstract="YES" syncable="YES">
+        <relationship name="errors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="YMError" syncable="YES"/>
+    </entity>
+    <entity name="YMAbstractWrapper" representedClassName="YMAbstractWrapper" isAbstract="YES" parentEntity="YMAbstractEntity" syncable="YES">
+        <attribute name="counter" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="dateEnd" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateStart" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lang" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="token" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="YMAccountInfo" representedClassName="YMAccountInfo" syncable="YES">
+        <attribute name="hidden" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="lang" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shouldBeRemoved" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="token" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="counterInfo" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="YMCounterInfo" inverseName="accountInfo" inverseEntity="YMCounterInfo" syncable="YES"/>
+    </entity>
+    <entity name="YMContentEntrance" representedClassName="YMContentEntrance" parentEntity="YMAbstractChildEntity" syncable="YES">
+        <attribute name="denial" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="depth" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="pageViews" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="visits" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visitTime" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="YMContentEntranceWrapper" representedClassName="YMContentEntranceWrapper" parentEntity="YMAbstractWrapper" syncable="YES">
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="YMContentEntrance" syncable="YES"/>
+    </entity>
+    <entity name="YMContentExit" representedClassName="YMContentExit" parentEntity="YMAbstractChildEntity" syncable="YES">
+        <attribute name="denial" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="depth" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="pageViews" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="visits" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visitTime" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="YMContentExitWrapper" representedClassName="YMContentExitWrapper" parentEntity="YMAbstractWrapper" syncable="YES">
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="YMContentExit" syncable="YES"/>
+    </entity>
+    <entity name="YMContentPopular" representedClassName="YMContentPopular" parentEntity="YMAbstractChildEntity" syncable="YES">
+        <attribute name="entrance" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="exit" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="pageViews" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="urlFull" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="child" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="YMContentPopular" inverseName="parent" inverseEntity="YMContentPopular" syncable="YES"/>
+        <relationship name="parent" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="YMContentPopular" inverseName="child" inverseEntity="YMContentPopular" syncable="YES"/>
+    </entity>
+    <entity name="YMContentPopularWrapper" representedClassName="YMContentPopularWrapper" parentEntity="YMAbstractWrapper" syncable="YES">
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="YMContentPopular" syncable="YES"/>
+    </entity>
+    <entity name="YMContentTitle" representedClassName="YMContentTitle" parentEntity="YMAbstractChildEntity" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pageViews" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="YMContentTitleWrapper" representedClassName="YMContentTitleWrapper" parentEntity="YMAbstractWrapper" syncable="YES">
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="YMContentTitle" syncable="YES"/>
+    </entity>
+    <entity name="YMContentUrl" representedClassName="YMContentUrl" parentEntity="YMAbstractChildEntity" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pageViews" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="YMContentUrlWrapper" representedClassName="YMContentUrlWrapper" parentEntity="YMAbstractWrapper" syncable="YES">
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="YMContentUrl" syncable="YES"/>
+    </entity>
+    <entity name="YMCounter" representedClassName="YMCounter" syncable="YES">
+        <attribute name="codeStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="lang" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ownerLogin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="permission" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="site" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="token" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="YMCounterInfo" representedClassName="YMCounterInfo" syncable="YES">
+        <attribute name="color" optional="YES" attributeType="Transformable" valueTransformerName="YMGradientColorValueTransformer" syncable="YES"/>
+        <attribute name="dateEnd" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateStart" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="hidden" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="selected" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="accountInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="YMAccountInfo" inverseName="counterInfo" inverseEntity="YMAccountInfo" syncable="YES"/>
+        <relationship name="counter" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="YMCounter" syncable="YES"/>
+    </entity>
+    <entity name="YMCountersListWrapper" representedClassName="YMCountersListWrapper" parentEntity="YMAbstractEntity" syncable="YES">
+        <attribute name="lang" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="token" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="counters" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="YMCounter" syncable="YES"/>
+    </entity>
+    <entity name="YMDemographyStructure" representedClassName="YMDemographyStructure" parentEntity="YMAbstractChildEntity" syncable="YES">
+        <attribute name="denial" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="depth" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="visits" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visitsPercent" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="visitTime" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="YMDemographyStructureWrapper" representedClassName="YMDemographyStructureWrapper" parentEntity="YMAbstractWrapper" syncable="YES">
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="YMDemographyStructure" syncable="YES"/>
+    </entity>
+    <entity name="YMError" representedClassName="YMError" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="YMGeo" representedClassName="YMGeo" parentEntity="YMAbstractChildEntity" syncable="YES">
+        <attribute name="countryID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="denial" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="depth" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pageViews" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visits" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visitTime" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="YMGeoWrapper" representedClassName="YMGeoWrapper" parentEntity="YMAbstractWrapper" syncable="YES">
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="YMGeo" syncable="YES"/>
+    </entity>
+    <entity name="YMSourcesPhrases" representedClassName="YMSourcesPhrases" parentEntity="YMAbstractChildEntity" syncable="YES">
+        <attribute name="denial" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="depth" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="pageViews" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="phrase" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="visits" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visitTime" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="searchEngines" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="YMSourcesPhrasesSearchEngines" syncable="YES"/>
+    </entity>
+    <entity name="YMSourcesPhrasesSearchEngines" representedClassName="YMSourcesPhrasesSearchEngines" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="page" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="YMSourcesPhrasesWrapper" representedClassName="YMSourcesPhrasesWrapper" parentEntity="YMAbstractWrapper" syncable="YES">
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="YMSourcesPhrases" syncable="YES"/>
+    </entity>
+    <entity name="YMSourcesSearchEngines" representedClassName="YMSourcesSearchEngines" parentEntity="YMAbstractChildEntity" syncable="YES">
+        <attribute name="denial" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="depth" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pageViews" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="searchEngineID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visits" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visitsDelayed" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visitTime" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="YMSourcesSearchEnginesWrapper" representedClassName="YMSourcesSearchEnginesWrapper" parentEntity="YMAbstractWrapper" syncable="YES">
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="YMSourcesSearchEngines" syncable="YES"/>
+    </entity>
+    <entity name="YMSourcesSites" representedClassName="YMSourcesSites" parentEntity="YMAbstractChildEntity" syncable="YES">
+        <attribute name="denial" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="depth" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="pageViews" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="urlFull" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="visits" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visitTime" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="child" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="YMSourcesSites" syncable="YES"/>
+    </entity>
+    <entity name="YMSourcesSitesWrapper" representedClassName="YMSourcesSitesWrapper" parentEntity="YMAbstractWrapper" syncable="YES">
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="YMSourcesSites" syncable="YES"/>
+    </entity>
+    <entity name="YMSourcesSummary" representedClassName="YMSourcesSummary" parentEntity="YMAbstractChildEntity" syncable="YES">
+        <attribute name="denial" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="depth" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pageViews" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visits" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visitsDelayed" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visitTime" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="YMSourcesSummaryWrapper" representedClassName="YMSourcesSummaryWrapper" parentEntity="YMAbstractWrapper" syncable="YES">
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="YMSourcesSummary" syncable="YES"/>
+    </entity>
+    <entity name="YMTechBrowsers" representedClassName="YMTechBrowsers" parentEntity="YMAbstractChildEntity" syncable="YES">
+        <attribute name="denial" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="depth" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pageViews" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="visits" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visitTime" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="YMTechBrowsersWrapper" representedClassName="YMTechBrowsersWrapper" parentEntity="YMAbstractWrapper" syncable="YES">
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="YMTechBrowsers" syncable="YES"/>
+    </entity>
+    <entity name="YMTechCookies" representedClassName="YMTechCookies" parentEntity="YMAbstractChildEntity" syncable="YES">
+        <attribute name="denial" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="depth" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pageViews" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visits" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visitTime" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="YMTechCookiesWrapper" representedClassName="YMTechCookiesWrapper" parentEntity="YMAbstractWrapper" syncable="YES">
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="YMTechCookies" syncable="YES"/>
+    </entity>
+    <entity name="YMTechDisplay" representedClassName="YMTechDisplay" parentEntity="YMAbstractChildEntity" syncable="YES">
+        <attribute name="denial" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="depth" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pageViews" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visits" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visitTime" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="YMTechDisplayWrapper" representedClassName="YMTechDisplayWrapper" parentEntity="YMAbstractWrapper" syncable="YES">
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="YMTechDisplay" syncable="YES"/>
+        <relationship name="dataGroup" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="YMTechDisplay" syncable="YES"/>
+    </entity>
+    <entity name="YMTechFlash" representedClassName="YMTechFlash" parentEntity="YMAbstractChildEntity" syncable="YES">
+        <attribute name="denial" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="depth" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pageViews" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visits" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visitTime" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="YMTechFlashWrapper" representedClassName="YMTechFlashWrapper" parentEntity="YMAbstractWrapper" syncable="YES">
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="YMTechFlash" syncable="YES"/>
+    </entity>
+    <entity name="YMTechJava" representedClassName="YMTechJava" parentEntity="YMAbstractChildEntity" syncable="YES">
+        <attribute name="denial" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="depth" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pageViews" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visits" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visitTime" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="YMTechJavaScript" representedClassName="YMTechJavaScript" parentEntity="YMAbstractChildEntity" syncable="YES">
+        <attribute name="denial" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="depth" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pageViews" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visits" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visitTime" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="YMTechJavaScriptWrapper" representedClassName="YMTechJavaScriptWrapper" parentEntity="YMAbstractWrapper" syncable="YES">
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="YMTechJavaScript" syncable="YES"/>
+    </entity>
+    <entity name="YMTechJavaWrapper" representedClassName="YMTechJavaWrapper" parentEntity="YMAbstractWrapper" syncable="YES">
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="YMTechJava" syncable="YES"/>
+    </entity>
+    <entity name="YMTechMobile" representedClassName="YMTechMobile" parentEntity="YMAbstractChildEntity" syncable="YES">
+        <attribute name="denial" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="depth" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pageViews" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visits" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visitTime" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="YMTechMobileWrapper" representedClassName="YMTechMobileWrapper" parentEntity="YMAbstractWrapper" syncable="YES">
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="YMTechMobile" syncable="YES"/>
+        <relationship name="dataGroup" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="YMTechMobile" syncable="YES"/>
+    </entity>
+    <entity name="YMTechOS" representedClassName="YMTechOS" parentEntity="YMAbstractChildEntity" syncable="YES">
+        <attribute name="denial" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="depth" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pageViews" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visits" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visitTime" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="YMTechOSWrapper" representedClassName="YMTechOSWrapper" parentEntity="YMAbstractWrapper" syncable="YES">
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="YMTechOS" syncable="YES"/>
+    </entity>
+    <entity name="YMTechSilverlight" representedClassName="YMTechSilverlight" parentEntity="YMAbstractChildEntity" syncable="YES">
+        <attribute name="denial" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="depth" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pageViews" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visits" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visitTime" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="YMTechSilverlightWrapper" representedClassName="YMTechSilverlightWrapper" parentEntity="YMAbstractWrapper" syncable="YES">
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="YMTechSilverlight" syncable="YES"/>
+    </entity>
+    <entity name="YMTrafficDeepness" representedClassName="YMTrafficDeepness" parentEntity="YMAbstractChildEntity" syncable="YES">
+        <attribute name="denial" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="depth" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="percent" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="visits" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visitTime" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="YMTrafficDeepnessWrapper" representedClassName="YMTrafficDeepnessWrapper" parentEntity="YMAbstractWrapper" syncable="YES">
+        <relationship name="dataDepth" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="YMTrafficDeepness" syncable="YES"/>
+        <relationship name="dataTime" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="YMTrafficDeepness" syncable="YES"/>
+    </entity>
+    <entity name="YMTrafficHourly" representedClassName="YMTrafficHourly" parentEntity="YMAbstractChildEntity" syncable="YES">
+        <attribute name="avgVisit" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="denial" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="depth" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="hours" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="visitTime" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="YMTrafficHourlyWrapper" representedClassName="YMTrafficHourlyWrapper" parentEntity="YMAbstractWrapper" syncable="YES">
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="YMTrafficHourly" syncable="YES"/>
+    </entity>
+    <entity name="YMTrafficSummary" representedClassName="YMTrafficSummary" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="denial" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="depth" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lang" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pageViews" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="parentId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="token" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="visitors" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visitorsNew" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visits" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visitTime" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="YMTrafficSummaryWrapper" representedClassName="YMTrafficSummaryWrapper" parentEntity="YMAbstractWrapper" syncable="YES">
+        <relationship name="data" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="YMTrafficSummary" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="YMAbstractChildEntity" positionX="0" positionY="0" width="128" height="118"/>
+        <element name="YMAbstractEntity" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="YMAbstractWrapper" positionX="0" positionY="0" width="128" height="120"/>
+        <element name="YMAccountInfo" positionX="0" positionY="0" width="128" height="133"/>
+        <element name="YMContentEntrance" positionX="0" positionY="0" width="128" height="135"/>
+        <element name="YMContentEntranceWrapper" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="YMContentExit" positionX="0" positionY="0" width="128" height="135"/>
+        <element name="YMContentExitWrapper" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="YMContentPopular" positionX="0" positionY="0" width="128" height="165"/>
+        <element name="YMContentPopularWrapper" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="YMContentTitle" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="YMContentTitleWrapper" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="YMContentUrl" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="YMContentUrlWrapper" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="YMCounter" positionX="0" positionY="0" width="128" height="180"/>
+        <element name="YMCounterInfo" positionX="0" positionY="0" width="128" height="148"/>
+        <element name="YMCountersListWrapper" positionX="0" positionY="0" width="128" height="88"/>
+        <element name="YMDemographyStructure" positionX="0" positionY="0" width="128" height="165"/>
+        <element name="YMDemographyStructureWrapper" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="YMError" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="YMGeo" positionX="0" positionY="0" width="128" height="150"/>
+        <element name="YMGeoWrapper" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="YMSourcesPhrases" positionX="0" positionY="0" width="128" height="165"/>
+        <element name="YMSourcesPhrasesSearchEngines" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="YMSourcesPhrasesWrapper" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="YMSourcesSearchEngines" positionX="0" positionY="0" width="128" height="165"/>
+        <element name="YMSourcesSearchEnginesWrapper" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="YMSourcesSites" positionX="0" positionY="0" width="128" height="180"/>
+        <element name="YMSourcesSitesWrapper" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="YMSourcesSummary" positionX="0" positionY="0" width="128" height="150"/>
+        <element name="YMSourcesSummaryWrapper" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="YMTechBrowsers" positionX="0" positionY="0" width="128" height="150"/>
+        <element name="YMTechBrowsersWrapper" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="YMTechCookies" positionX="0" positionY="0" width="128" height="135"/>
+        <element name="YMTechCookiesWrapper" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="YMTechDisplay" positionX="0" positionY="0" width="128" height="135"/>
+        <element name="YMTechDisplayWrapper" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="YMTechFlash" positionX="0" positionY="0" width="128" height="135"/>
+        <element name="YMTechFlashWrapper" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="YMTechJava" positionX="0" positionY="0" width="128" height="135"/>
+        <element name="YMTechJavaScript" positionX="0" positionY="0" width="128" height="135"/>
+        <element name="YMTechJavaScriptWrapper" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="YMTechJavaWrapper" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="YMTechMobile" positionX="0" positionY="0" width="128" height="135"/>
+        <element name="YMTechMobileWrapper" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="YMTechOS" positionX="0" positionY="0" width="128" height="135"/>
+        <element name="YMTechOSWrapper" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="YMTechSilverlight" positionX="0" positionY="0" width="128" height="135"/>
+        <element name="YMTechSilverlightWrapper" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="YMTrafficDeepness" positionX="0" positionY="0" width="128" height="135"/>
+        <element name="YMTrafficDeepnessWrapper" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="YMTrafficHourly" positionX="0" positionY="0" width="128" height="120"/>
+        <element name="YMTrafficHourlyWrapper" positionX="0" positionY="0" width="128" height="60"/>
+        <element name="YMTrafficSummary" positionX="0" positionY="0" width="128" height="208"/>
+        <element name="YMTrafficSummaryWrapper" positionX="0" positionY="0" width="128" height="60"/>
+    </elements>
+</model>

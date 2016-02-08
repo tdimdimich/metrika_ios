@@ -1,0 +1,99 @@
+PODS:
+  - AFNetworking (1.3.4)
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - DKHelper (1.2.0)
+  - FMDB (2.2):
+    - FMDB/standard (= 2.2)
+  - FMDB/common (2.2)
+  - FMDB/standard (2.2):
+    - FMDB/common
+  - KSCrash/Recording (0.0.4)
+  - KSCrash/Reporting/Filters/AppleFmt (0.0.4):
+    - KSCrash/Recording
+    - KSCrash/Reporting/Filters/Base
+  - KSCrash/Reporting/Filters/Base (0.0.4):
+    - KSCrash/Recording
+  - MBProgressHUD (0.7)
+  - Objection (0.16.0)
+  - protobuf-c (0.15)
+  - RestKit (0.20.3):
+    - RestKit/Core (= 0.20.3)
+  - RestKit/Core (0.20.3):
+    - RestKit/CoreData
+    - RestKit/Network
+    - RestKit/ObjectMapping
+  - RestKit/CoreData (0.20.3)
+  - RestKit/Network (0.20.3):
+    - AFNetworking (~> 1.3.0)
+    - RestKit/ObjectMapping
+    - RestKit/Support
+    - SOCKit
+  - RestKit/ObjectMapping (0.20.3)
+  - RestKit/Support (0.20.3):
+    - TransitionKit (= 1.1.1)
+  - SOCKit (1.1)
+  - TransitionKit (1.1.1)
+  - TTTAttributedLabel (1.9.5)
+  - VK-ios-sdk (1.1.7)
+  - YandexMobileMetrica (1.2.3):
+    - FMDB (= 2.2.0)
+    - KSCrash/Recording (~> 0.0.2)
+    - KSCrash/Reporting/Filters/AppleFmt (~> 0.0.2)
+    - protobuf-c (= 0.15)
+
+DEPENDENCIES:
+  - BlocksKit
+  - DKHelper (from `https://github.com/DmitryKorotchenkov/DKHelper.git`)
+  - MBProgressHUD (from `https://github.com/matej/MBProgressHUD.git`, branch `iOS7`)
+  - Objection (= 0.16.0)
+  - RestKit (= 0.20.3)
+  - TTTAttributedLabel (= 1.9.5)
+  - VK-ios-sdk
+  - YandexMobileMetrica (= 1.2.3)
+
+EXTERNAL SOURCES:
+  DKHelper:
+    :git: https://github.com/DmitryKorotchenkov/DKHelper.git
+  MBProgressHUD:
+    :branch: iOS7
+    :git: https://github.com/matej/MBProgressHUD.git
+
+CHECKOUT OPTIONS:
+  DKHelper:
+    :commit: f472fc81fa0ee55fa8efcc0cd5ca505819c50d0d
+    :git: https://github.com/DmitryKorotchenkov/DKHelper.git
+  MBProgressHUD:
+    :commit: e7b749355c2cb6edfc2c7fecf9b62e5c77db17c8
+    :git: https://github.com/matej/MBProgressHUD.git
+
+SPEC CHECKSUMS:
+  AFNetworking: cf8e418e16f0c9c7e5c3150d019a3c679d015018
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  DKHelper: 618b09203e9b4027189d81e1eae6079e0bd86bba
+  FMDB: 0678cab3b024ea6a2e6ea5dd91fc8eb9a296bf57
+  KSCrash: a17f93c9b300753bf66dd7d72260cace0d307b1b
+  MBProgressHUD: cd75c7979a27e035d0b37e0fde9a7f2f0bc01d6f
+  Objection: 7445392399fb3082acec36a231dca7c14637c1ac
+  protobuf-c: e7a40bc5d069f55f6d47d616ea532481b947b8d9
+  RestKit: ddc3c3a2b6cbe4578c4193d8e0dfe93d79333c3b
+  SOCKit: c7376ac262bea9115b8f749358f762522a47d392
+  TransitionKit: aec4d65b2be460fec0db04f905e8bedca601d669
+  TTTAttributedLabel: a3547ed4b3197a294c15882e4c9ee338a7e78c90
+  VK-ios-sdk: 303df4a8c5ef09dc3be4527b6d7afc7ab874f4f1
+  YandexMobileMetrica: 76c47a7a8b05ceee085a62d950633fc11a65d48c
+
+COCOAPODS: 0.36.3

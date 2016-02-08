@@ -1,0 +1,12 @@
+{
+  "name": "DKHelper",
+  "version": "1.2.0",
+  "platforms": {
+    "ios": null
+  },
+  "source": {
+    "git": "https://github.com/DmitryKorotchenkov/DKHelper.git"
+  },
+  "source_files": "Classes",
+  "requires_arc": true
+}

@@ -1,0 +1,106 @@
+
+"From them" = "From them ";
+"max auditory per day" = " - maximum auditory per day.";
+"visits" = " visits";
+"Record: %@ - " = "Record: %@ - ";
+"Pull down to refresh" = "Pull down to refresh";
+"Release to refresh" = "Release to refresh...";
+"Retrieving data from server" = "Retrieving data from server...";
+
+"Menu-Settings" = "Settings";
+"Menu-Visits" = "Traffic";
+"Menu-Summaru" = "Summary";
+"Menu-Countries" = "Countries";
+"Menu-Sex" = "Gender-age structure";
+"Menu-Opeartion systems" = "Operating systems";
+"Menu-Brausers" = "Browsers";
+"Menu-Common summary" = "Summary";
+"Menu-Sources" = "Sources";
+"Menu-Sites" = "Sites";
+"Menu-Search systems" = "Search engines";
+"Menu-Search phrases" = "Search phrases";
+"Menu-Visitors" = "Visitors";
+"Menu-Deep" = "By page depth";
+"Menu-Time" = "By time";
+"Menu-Time of day" = "By time of day";
+"Menu-Content" = "Content";
+"Menu-Popular" = "Most popular";
+"Menu-Entry pages" = "Entry pages";
+"Menu-Exit pages" = "Exit pages";
+"Menu-Page titles" = "Page titles";
+"Menu-URL params" = "URL parametres";
+"Menu-Technologies" = "Tech Specs";
+"Menu-Display groupes" = "Type of monitor";
+"Menu-Display resolution" = "Monitor resolution";
+"Menu-Device type" = "Device type";
+"Menu-Mobile devices" = "Cell phones and PDAs";
+"Menu-Flash versions" = "Flash version";
+"Menu-Silverlight versions" = "Silverlight version";
+"Menu-Java availability" = "Java";
+"Menu-Cookies availability" = "Cookies";
+"Menu-JavaScript availability" = "JavaScript";
+"Menu-Creators" = "Creators";
+"Menu-Exit" = "Exit";
+
+"Alert-Exit" = "Exit";
+"Alert-Are you sure?" = "Are you sure?";
+"Alert-Yes" = "Yes";
+"Alert-No" = "No";
+
+"VF-thousands" = "thou";
+"VF-millions" = "m";
+"VF-seconds" = "sec";
+"VF-minutes" = "min";
+"VF-hours" = "h";
+"VF-days" = "d";
+
+"Picker-Visits" = "Visits";
+"Picker-Views" = "Page views";
+"Picker-Visitors" = "Visitors";
+"Picker-New" = "New visitors";
+"Picker-Failure" = "Bounce rate";
+"Picker-Deepness" = "Page depth";
+"Picker-Time" = "Time on site";
+"Picker-Returning" = "Returning";
+"Picker-Done" = "Done";
+"Picker-ShareOfVisits" = "Share of visits";
+"Picker-EntryPages" = "Entry pages";
+"Picker-ExitPages" = "Exit pages";
+
+"Max" = "max.:";
+"Min" = "min.:";
+"Graph" = "Plot:";
+"Total:" = "Total:";
+"Others" = "Others";
+"Counters" = "Counters";
+
+"DatePicker-Today" = "Today";
+"DatePicker-Week" = "Week";
+"DatePicker-Month" = "Month";
+
+"DatePicker-Year" = "Year";
+"Site name" = "Site name";
+"Segalovich" = "Ilya Segalovich\n(13.09.1964 - 27.07.2013)";
+
+"Advice-Continue" = "Tap the screen to continue.";
+"Advice-Rotate" = "Turn the phone to learn more about the schedule.";
+"Advice-Scroll" = "Scroll the screen to the right to open the menu.";
+
+"Alert-CheckConnectionAdvice" = "Check your Internet connection or repeat request later.";
+"Alert-ConnectionError" = "The attempt to connect to a server failed.";
+
+"Учетная запись Яндекс.Метрики" = "Yandex Metrika Account";
+"OfferAgreement" = "I agree to the terms of this offer\ndue to continue to the application.";
+"OfferLinkText" = "terms of this offer";
+"Menu-Share" = "Share";
+"Sharing-Mesage-Text" = "Millimetrika. Convenient analytics.";
+
+"Rate-Message" = "Please rate our Application";
+"Rate-AppName" = "";
+"Rate-rateButton" = "Rate Now";
+"Rate-remindButton" = "Remind me later";
+"Rate-skipButton" = "Never rate";
+"Message-button-title" = "Message";
+"Cancel" = "Cancel";
+"Add sites to your account." = "Add sites to your account.";
+"Cookies disabled" = "Cookies disabled";

@@ -1,0 +1,7 @@
+.idea
+Metrika.xcodeproj/xcuserdata/*
+Metrika.xcworkspace/xcuserdata/*
+Metrika.xcodeproj/project.xcworkspace/xcuserdata/*
+Pods/Pods.xcodeproj/xcuserdata/*
+.DS_Store
+Metrika.xcworkspace/xcshareddata/Metrika.xcscmblueprint

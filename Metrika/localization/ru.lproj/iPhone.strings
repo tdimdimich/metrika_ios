@@ -1,0 +1,294 @@
+
+/* Class = "IBUILabel"; text = "58,5"; ObjectID = "0GG-pc-M2c"; */
+"0GG-pc-M2c.text" = "58,5";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "121-by-aVg"; */
+"121-by-aVg.text" = "Label";
+
+/* Class = "IBUILabel"; text = "проводит, в среднем, посетитель на странице."; ObjectID = "199-eh-Anb"; */
+"199-eh-Anb.text" = "проводит, в среднем, посетитель на странице.";
+
+/* Class = "IBUILabel"; text = "indy.letterhead"; ObjectID = "28T-AV-f5a"; */
+"28T-AV-f5a.text" = "indy.letterhead";
+
+/* Class = "IBUIButton"; normalTitle = "Назад"; ObjectID = "2KT-91-KVN"; */
+"2KT-91-KVN.normalTitle" = "Назад";
+
+/* Class = "IBUIButton"; normalTitle = "0:00"; ObjectID = "2pj-zo-9gc"; */
+"2pj-zo-9gc.normalTitle" = "0:00";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "3FH-jY-Azj"; */
+"3FH-jY-Azj.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Объединенные Арабские Эмираты"; ObjectID = "3nI-F9-Fzj"; */
+"3nI-F9-Fzj.text" = "Объединенные Арабские Эмираты";
+
+/* Class = "IBUITabBarItem"; title = "Отчеты"; ObjectID = "4RZ-gr-cuC"; */
+"4RZ-gr-cuC.title" = "Отчеты";
+
+/* Class = "IBUILabel"; text = "999+"; ObjectID = "517-ut-a7f"; */
+"517-ut-a7f.text" = "999+";
+
+/* Class = "IBUILabel"; text = "25 – 34 года и старше"; ObjectID = "5To-hT-VQR"; */
+"5To-hT-VQR.text" = "25 – 34 года и старше";
+
+/* Class = "IBUILabel"; text = "посетителей за выбранный промежуток времени."; ObjectID = "5gd-DD-Ev5"; */
+"5gd-DD-Ev5.text" = "посетителей за выбранный промежуток времени.";
+
+/* Class = "IBUILabel"; text = "Удаление происходит локально. Данные учетной\nзаписи в системе Яндекс.Метрика не пострадают."; ObjectID = "6VW-WZ-Ean"; */
+"6VW-WZ-Ean.text" = "Удаление происходит локально. Данные учетной\nзаписи в системе Яндекс.Метрика не пострадают.";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "6g3-lH-xNO"; */
+"6g3-lH-xNO.text" = "Label";
+
+/* Class = "IBUILabel"; text = "При запросе статистики за период, уже сохраненный\nлокально, данные на устройстве будут обновлены\nавтоматически"; ObjectID = "7O1-mH-gbt"; */
+"7O1-mH-gbt.text" = "При запросе статистики за период, уже сохраненный\nлокально, данные на устройстве будут обновлены\nавтоматически";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "8yc-b7-pKu"; */
+"8yc-b7-pKu.text" = "Label";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "9ae-7P-FCT"; */
+"9ae-7P-FCT.normalTitle" = "Button";
+
+/* Class = "IBUILabel"; text = "Сохранять сессию после выхода"; ObjectID = "9pS-2K-2kO"; */
+"9pS-2K-2kO.text" = "Сохранять сессию после выхода";
+
+/* Class = "IBUIButton"; normalTitle = "1 янв 2013"; ObjectID = "ANN-gA-UAF"; */
+"ANN-gA-UAF.normalTitle" = "1 янв 2013";
+
+/* Class = "IBUILabel"; text = ""; ObjectID = "CqD-rv-REz"; */
+"CqD-rv-REz.text" = "";
+
+/* Class = "IBUIButton"; normalTitle = "Назад"; ObjectID = "D48-tG-GkA"; */
+"D48-tG-GkA.normalTitle" = "Назад";
+
+/* Class = "IBUILabel"; text = "мин."; ObjectID = "DMC-PR-gf2"; */
+"DMC-PR-gf2.text" = "мин.";
+
+/* Class = "IBUILabel"; text = ""; ObjectID = "ECY-rJ-RbU"; */
+"ECY-rJ-RbU.text" = "";
+
+/* Class = "IBUILabel"; text = "Цвет счетчика можно изменить в настройках,\nв разделе управления учетными записями."; ObjectID = "Ep0-OR-Crw"; */
+"Ep0-OR-Crw.text" = "Цвет счетчика можно изменить в настройках,\nв разделе управления учетными записями.";
+
+/* Class = "IBUIButton"; normalTitle = "www.progress-engine.ru"; ObjectID = "I0U-SX-wZ7"; */
+"I0U-SX-wZ7.normalTitle" = "www.progress-engine.ru";
+
+/* Class = "IBUIButton"; normalTitle = "Запомнить учетную запись"; ObjectID = "IUe-Qz-71O"; */
+"IUe-Qz-71O.normalTitle" = "Запомнить учетную запись";
+
+/* Class = "IBUILabel"; text = "Великобритания"; ObjectID = "JfI-fH-hR9"; */
+"JfI-fH-hR9.text" = "Великобритания";
+
+/* Class = "IBUILabel"; text = "(35.5%)"; ObjectID = "Jm7-Fb-5Uw"; */
+"Jm7-Fb-5Uw.text" = "(35.5%)";
+
+/* Class = "IBUILabel"; text = "Станислав Карасев"; ObjectID = "Jva-2P-XzY"; */
+"Jva-2P-XzY.text" = "Станислав Карасев";
+
+/* Class = "IBUILabel"; text = "Настройки"; ObjectID = "KP6-p8-6GM"; */
+"KP6-p8-6GM.text" = "Настройки";
+
+/* Class = "IBUILabel"; text = "(65,8%)"; ObjectID = "Le9-s6-fE4"; */
+"Le9-s6-fE4.text" = "(65,8%)";
+
+/* Class = "IBUIButton"; normalTitle = "0:00"; ObjectID = "MLw-1f-6BI"; */
+"MLw-1f-6BI.normalTitle" = "0:00";
+
+/* Class = "IBUIButton"; normalTitle = "31 дек 2012"; ObjectID = "MR1-Hd-k8q"; */
+"MR1-Hd-k8q.normalTitle" = "31 дек 2012";
+
+/* Class = "IBUIButton"; normalTitle = "Назад"; ObjectID = "MTi-OV-rBi"; */
+"MTi-OV-rBi.normalTitle" = "Назад";
+
+/* Class = "IBUILabel"; text = "Разработка"; ObjectID = "Mhi-cR-vgc"; */
+"Mhi-cR-vgc.text" = "Разработка";
+
+/* Class = "IBUILabel"; text = "Огромное спасибо всем сотрудникам\nкомпании Progress Engine,\nпомогавшим словом и делом\nв развитии Миллиметрики."; ObjectID = "NNL-ZQ-FUP"; */
+"NNL-ZQ-FUP.text" = "Огромное спасибо всем сотрудникам\nкомпании Progress Engine,\nпомогавшим словом и делом\nв развитии Миллиметрики.";
+
+/* Class = "IBUITabBarItem"; title = "Сводка"; ObjectID = "NRv-dO-E2K"; */
+"NRv-dO-E2K.title" = "Сводка";
+
+/* Class = "IBUILabel"; text = "indy.letterhead@nttshell.com"; ObjectID = "OBz-IM-ZIM"; */
+"OBz-IM-ZIM.text" = "indy.letterhead@nttshell.com";
+
+/* Class = "IBUILabel"; text = "Mac OS X"; ObjectID = "Ouj-ZR-CrY"; */
+"Ouj-ZR-CrY.text" = "Mac OS X";
+
+/* Class = "IBUIButton"; normalTitle = "31 дек 2013"; ObjectID = "Pe7-Fn-Rmg"; */
+"Pe7-Fn-Rmg.normalTitle" = "31 дек 2013";
+
+/* Class = "IBUILabel"; text = "млн."; ObjectID = "R0d-zl-23L"; */
+"R0d-zl-23L.text" = "млн.";
+
+/* Class = "IBUILabel"; text = "(35.5%)"; ObjectID = "RUE-cU-NL4"; */
+"RUE-cU-NL4.text" = "(35.5%)";
+
+/* Class = "IBUILabel"; text = "25 – 34 года"; ObjectID = "RvB-x5-3Qy"; */
+"RvB-x5-3Qy.text" = "25 – 34 года";
+
+/* Class = "IBUILabel"; text = "Денис Корнеев"; ObjectID = "SId-7p-D1g"; */
+"SId-7p-D1g.text" = "Денис Корнеев";
+
+/* Class = "IBUITextField"; text = "qweqweqw"; ObjectID = "SVj-T9-z24"; */
+"SVj-T9-z24.text" = "qweqweqw";
+
+/* Class = "IBUIButton"; normalTitle = "Войти"; ObjectID = "TB6-ZB-k0n"; */
+"TB6-ZB-k0n.normalTitle" = "Войти";
+
+/* Class = "IBUILabel"; text = "(65,8%)"; ObjectID = "Tgu-O6-2XH"; */
+"Tgu-O6-2XH.text" = "(65,8%)";
+
+/* Class = "IBUILabel"; text = "(65,8%)"; ObjectID = "Vlj-hf-ZHu"; */
+"Vlj-hf-ZHu.text" = "(65,8%)";
+
+/* Class = "IBUILabel"; text = "(35.5%)"; ObjectID = "Xo1-Qe-oD2"; */
+"Xo1-Qe-oD2.text" = "(35.5%)";
+
+/* Class = "IBUILabel"; text = "Сводка"; ObjectID = "XxF-UN-Crb"; */
+"XxF-UN-Crb.text" = "Сводка";
+
+/* Class = "IBUIButton"; normalTitle = "Сменить"; ObjectID = "YO4-FI-nY6"; */
+"YO4-FI-nY6.normalTitle" = "Сменить";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "aAW-4u-dge"; */
+"aAW-4u-dge.text" = "Label";
+
+/* Class = "IBUILabel"; text = "999+ млн. - пришли из поисковых систем."; ObjectID = "aU1-s5-TVf"; */
+"aU1-s5-TVf.text" = "999+ млн. - пришли из поисковых систем.";
+
+/* Class = "IBUILabel"; text = "посетителей пришли по ссылкам на сайтах,"; ObjectID = "aeN-Ci-LQH"; */
+"aeN-Ci-LQH.text" = "посетителей пришли по ссылкам на сайтах,";
+
+/* Class = "IBUILabel"; text = "Миллиметрика"; ObjectID = "cAJ-PX-e9O"; */
+"cAJ-PX-e9O.text" = "Миллиметрика";
+
+/* Class = "IBUILabel"; text = "999+ млн. - набрали адрес в браузере,"; ObjectID = "cJ6-Tu-DS1"; */
+"cJ6-Tu-DS1.text" = "999+ млн. - набрали адрес в браузере,";
+
+/* Class = "IBUITabBarItem"; title = "Страницы"; ObjectID = "d49-pS-neP"; */
+"d49-pS-neP.title" = "Страницы";
+
+/* Class = "IBUILabel"; text = "55,7%/4"; ObjectID = "dGl-GH-aNK"; */
+"dGl-GH-aNK.text" = "55,7%/4";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "dd8-1Y-rFD"; */
+"dd8-1Y-rFD.text" = "Label";
+
+/* Class = "IBUILabel"; text = "25 – 34 года"; ObjectID = "duP-a5-6Hu"; */
+"duP-a5-6Hu.text" = "25 – 34 года";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "eBi-rA-TIk"; */
+"eBi-rA-TIk.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Связаться с командой\nразработчиков:"; ObjectID = "ej6-SA-EfQ"; */
+"ej6-SA-EfQ.text" = "Связаться с командой\nразработчиков:";
+
+/* Class = "IBUILabel"; text = "Mac OS X"; ObjectID = "fhc-MR-DNr"; */
+"fhc-MR-DNr.text" = "Mac OS X";
+
+/* Class = "IBUITabBarItem"; title = "Настройки"; ObjectID = "gXD-R3-f0L"; */
+"gXD-R3-f0L.title" = "Настройки";
+
+/* Class = "IBUILabel"; text = "Будут использованы данные ранее сохраненных учетных\nзаписей Яндекс.Метрики."; ObjectID = "hnC-ce-pmO"; */
+"hnC-ce-pmO.text" = "Будут использованы данные ранее сохраненных учетных\nзаписей Яндекс.Метрики.";
+
+/* Class = "IBUIButton"; normalTitle = "Добавить учетную запись"; ObjectID = "igC-MG-iQ7"; */
+"igC-MG-iQ7.normalTitle" = "Добавить учетную запись";
+
+/* Class = "IBUILabel"; text = "Indy Letterhead"; ObjectID = "jNG-ds-jBk"; */
+"jNG-ds-jBk.text" = "Indy Letterhead";
+
+/* Class = "IBUILabel"; text = " Из них 12 тыс. - максимальная аудитория за сутки."; ObjectID = "kgI-8Y-thO"; */
+"kgI-8Y-thO.text" = " Из них 12 тыс. - максимальная аудитория за сутки.";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "kiS-QF-f75"; */
+"kiS-QF-f75.text" = "Label";
+
+/* Class = "IBUIButton"; normalTitle = "info@progress-engine.ru"; ObjectID = "kkx-h9-RTT"; */
+"kkx-h9-RTT.normalTitle" = "info@progress-engine.ru";
+
+/* Class = "IBUILabel"; text = "(65,8%)"; ObjectID = "lPG-Nv-Qrg"; */
+"lPG-Nv-Qrg.text" = "(65,8%)";
+
+/* Class = "IBUILabel"; text = "Получение данных от сервера..."; ObjectID = "lYD-tS-bS5"; */
+"lYD-tS-bS5.text" = "Получение данных от сервера...";
+
+/* Class = "IBUILabel"; text = "При запросе статистики за период, уже сохраненный\nлокально, данные на устройстве будут обновлены\nавтоматически"; ObjectID = "nLj-Wm-KDi"; */
+"nLj-Wm-KDi.text" = "При запросе статистики за период, уже сохраненный\nлокально, данные на устройстве будут обновлены\nавтоматически";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "osh-Wy-2la"; */
+"osh-Wy-2la.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Рекорд: 21.03.2013 - 23,6 ч."; ObjectID = "pVO-TJ-8Hu"; */
+"pVO-TJ-8Hu.text" = "Рекорд: 21.03.2013 - 23,6 ч.";
+
+/* Class = "IBUILabel"; text = "Удобная аналитика"; ObjectID = "qis-Uj-yRL"; */
+"qis-Uj-yRL.text" = "Удобная аналитика";
+
+/* Class = "IBUIButton"; normalTitle = "Назад"; ObjectID = "qwY-fE-9gl"; */
+"qwY-fE-9gl.normalTitle" = "Назад";
+
+/* Class = "IBUILabel"; text = ""; ObjectID = "r8p-oU-whC"; */
+"r8p-oU-whC.text" = "";
+
+/* Class = "IBUIButton"; normalTitle = "Назад"; ObjectID = "rmB-Xy-RvM"; */
+"rmB-Xy-RvM.normalTitle" = "Назад";
+
+/* Class = "IBUILabel"; text = "Mac OS X"; ObjectID = "sA6-TC-fv4"; */
+"sA6-TC-fv4.text" = "Mac OS X";
+
+/* Class = "IBUILabel"; text = "Дмитрий Коротченков"; ObjectID = "sdi-1b-0BD"; */
+"sdi-1b-0BD.text" = "Дмитрий Коротченков";
+
+/* Class = "IBUIButton"; normalTitle = "1 янв 2012"; ObjectID = "smF-Nk-1E6"; */
+"smF-Nk-1E6.normalTitle" = "1 янв 2012";
+
+/* Class = "IBUILabel"; text = "58,5"; ObjectID = "swe-xY-087"; */
+"swe-xY-087.text" = "58,5";
+
+/* Class = "IBUILabel"; text = "25 – 34 года и старше"; ObjectID = "tu1-fk-nlW"; */
+"tu1-fk-nlW.text" = "25 – 34 года и старше";
+
+/* Class = "IBUILabel"; text = "Страницы"; ObjectID = "u51-ac-9Ek"; */
+"u51-ac-9Ek.text" = "Страницы";
+
+/* Class = "IBUILabel"; text = "Дизайн"; ObjectID = "uLp-ZK-FK2"; */
+"uLp-ZK-FK2.text" = "Дизайн";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "vww-SN-N8I"; */
+"vww-SN-N8I.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Управление проектом"; ObjectID = "w7w-r5-zCO"; */
+"w7w-r5-zCO.text" = "Управление проектом";
+
+/* Class = "IBUILabel"; text = "(65,8%)"; ObjectID = "wQM-El-5Cd"; */
+"wQM-El-5Cd.text" = "(65,8%)";
+
+/* Class = "IBUILabel"; text = "Алексей Поимцев"; ObjectID = "wi1-md-cZ1"; */
+"wi1-md-cZ1.text" = "Алексей Поимцев";
+
+/* Class = "IBUITabBarItem"; title = "Item"; ObjectID = "wxV-Ia-ozn"; */
+"wxV-Ia-ozn.title" = "Item";
+
+/* Class = "IBUILabel"; text = "мин."; ObjectID = "xJU-HT-xt8"; */
+"xJU-HT-xt8.text" = "мин.";
+
+/* Class = "IBUIButton"; normalTitle = "Учетная запись Яндекс.Метрики"; ObjectID = "xfL-5k-cyy"; */
+"xfL-5k-cyy.normalTitle" = "Учетная запись Яндекс.Метрики";
+
+/* Class = "IBUILabel"; text = "Отчеты"; ObjectID = "xhw-48-lCi"; */
+"xhw-48-lCi.text" = "Отчеты";
+
+/* Class = "IBUILabel"; text = "Продюсирование"; ObjectID = "y1S-JE-F7Y"; */
+"y1S-JE-F7Y.text" = "Продюсирование";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "yCq-BK-5f1"; */
+"yCq-BK-5f1.text" = "Label";
+
+/* Class = "IBUILabel"; text = "(65,8%)"; ObjectID = "yEQ-OG-6ba"; */
+"yEQ-OG-6ba.text" = "(65,8%)";
+
+/* Class = "IBUILabel"; text = "Мы посвящаем этот проект\nсветлой памяти Великого Человека\nи уважаемого профессионала."; ObjectID = "zSq-ua-dmz"; */
+"zSq-ua-dmz.text" = "Мы посвящаем этот проект\nсветлой памяти Великого Человека\nи уважаемого профессионала.";
