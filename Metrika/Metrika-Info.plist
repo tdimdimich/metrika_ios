@@ -68,6 +68,8 @@
 		<string>HelveticaNeueLTStd-Lt.ttf</string>
 		<string>fontawesome-webfont.ttf</string>
 	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>iPhone</string>
 	<key>UIMainStoryboardFile</key>
 	<string>iPhone</string>
 	<key>UIPrerenderedIcon</key>
