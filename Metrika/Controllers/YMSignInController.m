@@ -29,6 +29,7 @@ static const CGFloat k3and5IncOffset = 236;
 static const float kShowHideProgressViewAnimationDuration = 0.25;
 
 #define IS_4_INC_SCREEN ([[UIScreen mainScreen] bounds].size.height == 568.0f)
+#define IS_3_5_INC_SCREEN ([[UIScreen mainScreen] bounds].size.height == 480.0f)
 
 @interface YMSignInController ()
 @property (weak, nonatomic) IBOutlet TTTAttributedLabel *offerLabel;
@@ -44,6 +45,8 @@ static const float kShowHideProgressViewAnimationDuration = 0.25;
 @property(weak, nonatomic) IBOutlet UIView *controlView;
 @property(nonatomic, strong) YMProgressBarController *progressBarController;
 @property(nonatomic, strong) NSTimer *timer;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *logoTopConstraint;
+@property (weak, nonatomic) IBOutlet UIImageView *logoImageView;
 @property(nonatomic, strong) YMCountersListService *counterListService;
 @end
 
@@ -106,17 +109,29 @@ objection_requires(@"counterListService")
 }
 
 - (void)setBackgroundImage {
-    if (IS_4_INC_SCREEN) {
-        self.imageView.image = [UIImage imageNamed:@"Default-568h@2x.png"];
-        CGRect frame = self.controlView.frame;
-        frame.origin.y = k4IncOffset;
-        self.controlView.frame = frame;
-
+    
+    NSString *language = [[NSLocale preferredLanguages] firstObject];
+    if ([language isEqualToString:@"ru-RU"]) {
+        self.logoImageView.image = [UIImage imageNamed:@"millimetrika_loginscreen_logo"];
     } else {
-        CGRect frame = self.controlView.frame;
-        frame.origin.y = k3and5IncOffset;
-        self.controlView.frame = frame;
-        self.imageView.image = [UIImage imageNamed:@"Default.png"];
+        self.logoImageView.image = [UIImage imageNamed:@"millimetrika_loginscreen_logo_en"];
+    }
+    
+    if (IS_4_INC_SCREEN) {
+        self.logoTopConstraint.constant = 112;
+//        self.imageView.image = [UIImage imageNamed:@"Default-568h@2x.png"];
+//        CGRect frame = self.controlView.frame;
+//        frame.origin.y = k4IncOffset;
+//        self.controlView.frame = frame;
+
+    } else if (IS_3_5_INC_SCREEN) {
+        self.logoTopConstraint.constant = 96;
+//        self.imageView.image = [UIImage imageNamed:@"Default-568h@2x.png"];
+    } else {
+//        CGRect frame = self.controlView.frame;
+//        frame.origin.y = k3and5IncOffset;
+//        self.controlView.frame = frame;
+//        self.imageView.image = [UIImage imageNamed:@"Default.png"];
     }
 }
 
