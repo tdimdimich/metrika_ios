@@ -36,6 +36,7 @@
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     NSLog(@"shouldStartLoadWithRequest: %@", request);
+//    NSLog(@"scheme: %@", request.URL.scheme);
     if ([request.URL.scheme isEqualToString:@"metrikatest"]) { // "metrikatest" - some value from metrika-info.plist
 
         NSString *string = request.URL.absoluteString;
