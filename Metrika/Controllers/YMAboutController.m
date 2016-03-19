@@ -44,6 +44,9 @@ static NSString *kShareUrl = @"https://itunes.apple.com/ru/app/millimetrika/id84
     CGSize contentSize = self.scrollView.contentSize;
     contentSize.width = self.vkButton.right + self.messageButton.left;
     self.scrollView.contentSize = contentSize;
+    
+    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 20, 0);
+    self.tableView.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, 20, 0);
 }
 
 - (IBAction)shareViaMailButtonTap:(id)sender {

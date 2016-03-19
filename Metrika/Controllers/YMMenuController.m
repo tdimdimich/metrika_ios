@@ -183,7 +183,7 @@
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"menu-bg-pattern.png"]];
     self.rootController = [self.storyboard instantiateViewControllerWithIdentifier:@"rootControllerId"];
     [self addChildViewController:self.rootController];
-    self.rootController.view.frame = SYSTEM_VERSION_LESS_THAN_7 ? self.view.bounds : CGRectMake(0, 20, self.view.width, self.view.height - 20);
+//    self.rootController.view.frame = SYSTEM_VERSION_LESS_THAN_7 ? self.view.bounds : CGRectMake(0, 20, self.view.width, self.view.height - 20);
     [self.view addSubview:self.rootController.view];
     [self.view bringSubviewToFront:self.rootController.view];
 
@@ -194,10 +194,15 @@
     [YMTipsManager showTipForScreenWithMenuAfterDelayIfNeeded];
 
     if (!SYSTEM_VERSION_LESS_THAN_7) {
-        UIView *blackView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 20)];
+        UIView *blackView = [[UIView alloc] initWithFrame:CGRectZero];
+        blackView.translatesAutoresizingMaskIntoConstraints = NO;
         blackView.backgroundColor = [UIColor blackColor];
-        blackView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+//        blackView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         [self.view insertSubview:blackView belowSubview:self.rootController.view];
+        
+        NSDictionary *views = @{@"blackView": blackView};
+        [NSLayoutConstraint activateConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[blackView]|" options:0 metrics:nil views:views]];
+        [NSLayoutConstraint activateConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[blackView(20)]" options:0 metrics:nil views:views]];
     }
 }
 
@@ -265,7 +270,7 @@
         self.rootController.view.height = self.view.height;
         self.rootController.view.top = 0;
     } else {
-        self.rootController.view.height = self.view.height - 20;
+//        self.rootController.view.height = self.view.height - 20;
         self.rootController.view.top = 20;
     }
 //    self.rootController.view.height = (SYSTEM_VERSION_LESS_THAN_7 || [[UIApplication sharedApplication] isStatusBarHidden]) ? self.view.height : self.view.height - 20;
