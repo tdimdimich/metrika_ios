@@ -130,8 +130,8 @@ objection_requires(@"trafficSummaryService", @"sourcesSummaryService", @"osServi
     [self addChildViewController:self.menuController];
     self.menuController.view.top = 0;
     self.menuController.view.left = 0;
-    [self.view addSubview:self.menuController.view];
-    [self.view bringSubviewToFront:self.menuController.view];
+//    [self.view addSubview:self.menuController.view];
+//    [self.view bringSubviewToFront:self.menuController.view];
     self.view.clipsToBounds = YES;
     self.contentView.top += [self.menuController minHeight];
     self.contentView.height -= [self.menuController minHeight];
@@ -145,6 +145,9 @@ objection_requires(@"trafficSummaryService", @"sourcesSummaryService", @"osServi
                                                     headerView:pullToRefreshView
                                          offsetForStartLoading:pullToRefreshView.height
                                               changeStateBlock:pullToRefreshView.changeStateHandler];
+    
+    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 20, 0);
+    self.tableView.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, 20, 0);
 }
 
 - (void)viewDidAppear:(BOOL)animated {

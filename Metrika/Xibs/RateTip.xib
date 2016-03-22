@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment defaultVersion="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,17 +11,18 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4wT-9m-x1J">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4wT-9m-x1J">
                     <rect key="frame" x="0.0" y="44" width="320" height="480"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rate-stars" translatesAutoresizingMaskIntoConstraints="NO" id="yCJ-wh-LhK">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rate-stars" translatesAutoresizingMaskIntoConstraints="NO" id="yCJ-wh-LhK">
                             <rect key="frame" x="69" y="130" width="183" height="43"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="183" id="ZLy-qx-43d"/>
+                                <constraint firstAttribute="height" constant="43" id="tZi-ng-bcR"/>
+                            </constraints>
                         </imageView>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="273" translatesAutoresizingMaskIntoConstraints="NO" id="JOy-aY-P4L">
-                            <rect key="frame" x="24" y="197" width="273" height="59"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="273" translatesAutoresizingMaskIntoConstraints="NO" id="JOy-aY-P4L">
+                            <rect key="frame" x="24" y="205" width="272" height="53"/>
                             <attributedString key="attributedText">
                                 <fragment content="Пожалуйста, оцените ">
                                     <attributes>
@@ -47,9 +48,12 @@
                             </attributedString>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLR-Jq-5Oh">
-                            <rect key="frame" x="15" y="287" width="290" height="38"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLR-Jq-5Oh">
+                            <rect key="frame" x="15" y="290" width="290" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="290" id="GlY-Ih-ki5"/>
+                                <constraint firstAttribute="height" constant="38" id="nba-af-whg"/>
+                            </constraints>
                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                             <state key="normal" title="Оценить Миллиметрику" backgroundImage="login-button">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -58,9 +62,12 @@
                                 <action selector="rateButtonTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="6HQ-Af-xgO"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAl-oJ-6qX">
-                            <rect key="frame" x="15" y="335" width="290" height="38"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAl-oJ-6qX">
+                            <rect key="frame" x="15" y="338" width="290" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="cdl-6x-rvk"/>
+                                <constraint firstAttribute="width" constant="290" id="kkW-mq-PkI"/>
+                            </constraints>
                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                             <state key="normal" title="Напомнить позже" backgroundImage="remind-button-bg">
                                 <color key="titleColor" red="0.59607843140000005" green="0.59607843140000005" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -71,8 +78,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xs-C6-pAJ">
-                            <rect key="frame" x="15" y="382" width="290" height="38"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <rect key="frame" x="0.0" y="-44" width="30" height="31"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
                             <state key="normal">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -81,20 +87,40 @@
                                 <action selector="skipButtonTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="DdM-AX-8Bj"/>
                             </connections>
                         </button>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Нет, спасибо (продолжить)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="97" translatesAutoresizingMaskIntoConstraints="NO" id="jLU-b9-fh8">
-                            <rect key="frame" x="112" y="390" width="97" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нет, спасибо (продолжить)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="97" translatesAutoresizingMaskIntoConstraints="NO" id="jLU-b9-fh8">
+                            <rect key="frame" x="112" y="392" width="97" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="SKC-Wn-5Ox"/>
+                                <constraint firstAttribute="width" constant="97" id="YWY-Ey-7GK"/>
+                            </constraints>
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="9"/>
                             <color key="textColor" red="0.59607843140000005" green="0.59607843140000005" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="jLU-b9-fh8" firstAttribute="top" secondItem="fAl-oJ-6qX" secondAttribute="bottom" constant="16" id="6Km-UT-ffI"/>
+                        <constraint firstItem="nLR-Jq-5Oh" firstAttribute="centerX" secondItem="4wT-9m-x1J" secondAttribute="centerX" id="7A0-hp-G1c"/>
+                        <constraint firstItem="fAl-oJ-6qX" firstAttribute="centerX" secondItem="4wT-9m-x1J" secondAttribute="centerX" id="Bax-Rq-zz5"/>
+                        <constraint firstItem="yCJ-wh-LhK" firstAttribute="top" secondItem="4wT-9m-x1J" secondAttribute="top" constant="130" id="CYn-Gq-1Rl"/>
+                        <constraint firstItem="nLR-Jq-5Oh" firstAttribute="top" secondItem="JOy-aY-P4L" secondAttribute="bottom" constant="32" id="Crv-t4-bt4"/>
+                        <constraint firstItem="yCJ-wh-LhK" firstAttribute="centerX" secondItem="4wT-9m-x1J" secondAttribute="centerX" id="GaT-EY-TDC"/>
+                        <constraint firstAttribute="trailing" secondItem="JOy-aY-P4L" secondAttribute="trailing" constant="24" id="IhQ-ml-UT5"/>
+                        <constraint firstItem="fAl-oJ-6qX" firstAttribute="top" secondItem="nLR-Jq-5Oh" secondAttribute="bottom" constant="10" id="RKf-Dh-GOf"/>
+                        <constraint firstItem="JOy-aY-P4L" firstAttribute="top" secondItem="yCJ-wh-LhK" secondAttribute="bottom" constant="32" id="Vkc-28-rAs"/>
+                        <constraint firstItem="JOy-aY-P4L" firstAttribute="leading" secondItem="4wT-9m-x1J" secondAttribute="leading" constant="24" id="gNF-bl-LAc"/>
+                        <constraint firstItem="jLU-b9-fh8" firstAttribute="centerX" secondItem="4wT-9m-x1J" secondAttribute="centerX" id="w8b-mW-3gK"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <constraints>
+                <constraint firstItem="4wT-9m-x1J" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="44" id="AHJ-73-WER"/>
+                <constraint firstItem="4wT-9m-x1J" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FCa-dn-2fo"/>
+                <constraint firstAttribute="bottom" secondItem="4wT-9m-x1J" secondAttribute="bottom" constant="44" id="JU2-Xv-MTe"/>
+                <constraint firstAttribute="trailing" secondItem="4wT-9m-x1J" secondAttribute="trailing" id="xd0-xn-1Z8"/>
+            </constraints>
             <connections>
                 <outlet property="messageLabel" destination="JOy-aY-P4L" id="Xul-vV-736"/>
                 <outlet property="rateButton" destination="nLR-Jq-5Oh" id="iFR-g0-oFD"/>

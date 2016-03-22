@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment defaultVersion="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,37 +11,60 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="80I-qF-1Sh">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="80I-qF-1Sh">
                     <rect key="frame" x="0.0" y="54" width="320" height="460"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="244" translatesAutoresizingMaskIntoConstraints="NO" id="v46-IE-aRW">
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="244" translatesAutoresizingMaskIntoConstraints="NO" id="v46-IE-aRW">
                             <rect key="frame" x="38" y="265" width="244" height="57"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="57" id="A64-mM-9Lr"/>
+                                <constraint firstAttribute="width" constant="244" id="ZJa-pJ-HUl"/>
+                            </constraints>
                             <string key="text">Сдвиньте экран вправо,
 чтобы открыть меню.</string>
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="123" translatesAutoresizingMaskIntoConstraints="NO" id="gQY-QH-vaz">
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="123" translatesAutoresizingMaskIntoConstraints="NO" id="gQY-QH-vaz">
                             <rect key="frame" x="99" y="334" width="123" height="24"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="123" id="gph-Gr-p35"/>
+                                <constraint firstAttribute="height" constant="24" id="xPX-hF-Jhi"/>
+                            </constraints>
                             <string key="text">Нажмите на экран
 чтобы продолжить.</string>
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="9"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="tips-finger-icon" translatesAutoresizingMaskIntoConstraints="NO" id="t6V-B9-NQH">
-                            <rect key="frame" x="125" y="134" width="73" height="95"/>
-                            <autoresizingMask key="autoresizingMask"/>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="tips-finger-icon" translatesAutoresizingMaskIntoConstraints="NO" id="t6V-B9-NQH">
+                            <rect key="frame" x="124" y="134" width="73" height="95"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="95" id="iT6-EO-x68"/>
+                                <constraint firstAttribute="width" constant="73" id="rJf-V0-F8A"/>
+                            </constraints>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="v46-IE-aRW" firstAttribute="centerX" secondItem="80I-qF-1Sh" secondAttribute="centerX" id="7jA-Iw-mIF"/>
+                        <constraint firstItem="t6V-B9-NQH" firstAttribute="centerX" secondItem="80I-qF-1Sh" secondAttribute="centerX" id="NCi-FF-6Y7"/>
+                        <constraint firstItem="gQY-QH-vaz" firstAttribute="top" secondItem="v46-IE-aRW" secondAttribute="bottom" constant="12" id="OHO-CR-A3g"/>
+                        <constraint firstItem="gQY-QH-vaz" firstAttribute="centerX" secondItem="80I-qF-1Sh" secondAttribute="centerX" id="Ofi-SP-cNu"/>
+                        <constraint firstItem="t6V-B9-NQH" firstAttribute="top" secondItem="80I-qF-1Sh" secondAttribute="top" constant="134" id="fhk-x1-IO7"/>
+                        <constraint firstItem="v46-IE-aRW" firstAttribute="top" secondItem="t6V-B9-NQH" secondAttribute="bottom" constant="36" id="un4-NK-xGI"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.84999999999999998" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="80I-qF-1Sh" secondAttribute="bottom" constant="54" id="BsN-a6-Am1"/>
+                <constraint firstAttribute="trailing" secondItem="80I-qF-1Sh" secondAttribute="trailing" id="kVf-iZ-WvB"/>
+                <constraint firstItem="80I-qF-1Sh" firstAttribute="top" secondItem="bas-3D-6ie" secondAttribute="top" constant="54" id="na4-d8-Q1h"/>
+                <constraint firstItem="80I-qF-1Sh" firstAttribute="leading" secondItem="bas-3D-6ie" secondAttribute="leading" id="o5L-Rv-SB9"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="adviceLabel" destination="v46-IE-aRW" id="Kfv-Bz-EY3"/>

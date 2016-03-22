@@ -19,16 +19,16 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    static CGFloat kTotalValueCenterY = 60;
-    static CGFloat kTotalTypeCenterY = 71;
-    static CGFloat kSpaceBetweenTotalLabels = 7;
-    [self.totalValueLabel sizeToFit];
-    [self.totalTypeLabel sizeToFit];
-    self.totalValueLabel.centerY = kTotalValueCenterY;
-    self.totalTypeLabel.centerY = kTotalTypeCenterY;
-    CGFloat totalWidth = self.totalValueLabel.width + self.totalTypeLabel.width + kSpaceBetweenTotalLabels;
-    self.totalValueLabel.left = self.width / 2 - totalWidth / 2;
-    self.totalTypeLabel.left = self.totalValueLabel.right + kSpaceBetweenTotalLabels;
+//    static CGFloat kTotalValueCenterY = 60;
+//    static CGFloat kTotalTypeCenterY = 71;
+//    static CGFloat kSpaceBetweenTotalLabels = 7;
+//    [self.totalValueLabel sizeToFit];
+//    [self.totalTypeLabel sizeToFit];
+//    self.totalValueLabel.centerY = kTotalValueCenterY;
+//    self.totalTypeLabel.centerY = kTotalTypeCenterY;
+//    CGFloat totalWidth = self.totalValueLabel.width + self.totalTypeLabel.width + kSpaceBetweenTotalLabels;
+//    self.totalValueLabel.left = self.width / 2 - totalWidth / 2;
+//    self.totalTypeLabel.left = self.totalValueLabel.right + kSpaceBetweenTotalLabels;
 }
 
 

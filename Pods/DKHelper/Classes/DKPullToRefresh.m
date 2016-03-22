@@ -73,7 +73,18 @@ static char dk_kvoContext;
         self.topInset = scrollView.topInset;
         self.scrollView.delegate = self;
         headerView.bottom = self.scrollView.topInset;
+//        headerView.translatesAutoresizingMaskIntoConstraints = NO;
+        
+        headerView.center = CGPointMake([UIApplication sharedApplication].keyWindow.bounds.size.width / 2, headerView.center.y);
+//        NSLog(@"%@", NSStringFromCGSize(scrollView.contentSize));
+//        headerView.frame = CGRectMake(0, 0, 100, 400);
         [self.scrollView addSubview:headerView];
+        
+//        NSDictionary *views = @{@"headerView": headerView};
+//        NSDictionary *metrics = @{@"height": @50};
+//        [NSLayoutConstraint activateConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[headerView(50)]" options:0 metrics:nil views:views]];
+//        [NSLayoutConstraint activateConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[headerView]|" options:0 metrics:nil views:views]];
+        
         self.currentState = DKPullToRefreshStateLoading;
         [self cancelLoading];
         [scrollView addObserver:self forKeyPath:@"delegate" options:NSKeyValueObservingOptionNew context:&dk_kvoContext];
