@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="QL6-Rb-e9y">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="QL6-Rb-e9y">
     <dependencies>
         <deployment version="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -695,7 +695,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="161" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="fmc-vM-cf1">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="161" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="fmc-vM-cf1">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
@@ -887,6 +887,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fmc-vM-cf1" firstAttribute="leading" secondItem="EDP-99-Uh0" secondAttribute="leadingMargin" constant="-20" id="2DU-Gl-kWJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fmc-vM-cf1" secondAttribute="trailing" constant="-20" id="6Dh-PF-MpQ"/>
+                            <constraint firstItem="Z8O-yQ-4At" firstAttribute="top" secondItem="fmc-vM-cf1" secondAttribute="bottom" id="oEx-2i-e7N"/>
+                            <constraint firstItem="fmc-vM-cf1" firstAttribute="top" secondItem="EDP-99-Uh0" secondAttribute="topMargin" id="qYE-0O-snt"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="fmc-vM-cf1" id="RHT-Iy-lBD"/>
@@ -1016,7 +1022,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DZ4-fZ-3ex">
+                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DZ4-fZ-3ex">
                                 <rect key="frame" x="-4" y="0.0" width="5" height="568"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -1198,7 +1204,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="1bx-0X-pjb">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="1bx-0X-pjb">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -1299,6 +1305,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1bx-0X-pjb" firstAttribute="top" secondItem="OfQ-5Q-Dcq" secondAttribute="topMargin" id="1gF-Oy-aMY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1bx-0X-pjb" secondAttribute="trailing" constant="-20" id="gAt-Qr-q7Y"/>
+                            <constraint firstItem="2bs-I3-CUL" firstAttribute="top" secondItem="1bx-0X-pjb" secondAttribute="bottom" id="i8t-Gz-OCP"/>
+                            <constraint firstItem="1bx-0X-pjb" firstAttribute="leading" secondItem="OfQ-5Q-Dcq" secondAttribute="leadingMargin" constant="-20" id="p1U-IB-GwO"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ifp-zj-Ghx"/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -2594,18 +2606,21 @@ DQ
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZTc-Cm-JbK">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZTc-Cm-JbK">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dz7-I9-ZEv">
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dz7-I9-ZEv">
                                         <rect key="frame" x="0.0" y="1" width="320" height="1"/>
                                         <color key="backgroundColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eIj-wf-TB3">
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eIj-wf-TB3">
                                         <rect key="frame" x="0.0" y="56" width="320" height="1"/>
                                         <color key="backgroundColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="EHb-CS-DA6"/>
+                                        </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6OP-dv-YF5" customClass="YMCircleView">
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6OP-dv-YF5" customClass="YMCircleView">
                                         <rect key="frame" x="11" y="25" width="25" height="25"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
@@ -2616,6 +2631,16 @@ DQ
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.97254902124404907" green="0.97254902124404907" blue="0.97254902124404907" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="2DD-C1-dht"/>
+                                    <constraint firstItem="eIj-wf-TB3" firstAttribute="leading" secondItem="ZTc-Cm-JbK" secondAttribute="leading" id="5fk-GO-rKp"/>
+                                    <constraint firstItem="Dz7-I9-ZEv" firstAttribute="top" secondItem="ZTc-Cm-JbK" secondAttribute="top" constant="1" id="Ecb-wd-zMI"/>
+                                    <constraint firstAttribute="trailing" secondItem="eIj-wf-TB3" secondAttribute="trailing" id="LeM-OU-0Lc"/>
+                                    <constraint firstItem="eIj-wf-TB3" firstAttribute="top" secondItem="6OP-dv-YF5" secondAttribute="bottom" constant="6" id="N2D-p0-IBC"/>
+                                    <constraint firstItem="Dz7-I9-ZEv" firstAttribute="leading" secondItem="ZTc-Cm-JbK" secondAttribute="leading" id="RXm-nn-EFi"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dz7-I9-ZEv" secondAttribute="trailing" id="Z93-Ma-Ngy"/>
+                                    <constraint firstItem="6OP-dv-YF5" firstAttribute="top" secondItem="Dz7-I9-ZEv" secondAttribute="bottom" constant="23" id="oUU-qp-HTE"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="szG-In-yqU">
                                 <rect key="frame" x="0.0" y="57" width="320" height="447"/>
@@ -2645,6 +2670,11 @@ DQ
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZTc-Cm-JbK" firstAttribute="top" secondItem="Zsv-6h-3ra" secondAttribute="bottom" id="SE6-TY-N1c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZTc-Cm-JbK" secondAttribute="trailing" constant="-20" id="YWN-XU-DPW"/>
+                            <constraint firstItem="ZTc-Cm-JbK" firstAttribute="leading" secondItem="6US-pM-FeX" secondAttribute="leadingMargin" constant="-20" id="kWo-QG-zWV"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SEQ-bf-N5t">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="big-Nc-6ar">
@@ -3482,7 +3512,7 @@ DQ
         <image name="back-account-icon.png" width="16" height="24"/>
         <image name="back-icon.png" width="13" height="21"/>
         <image name="button-confirm-pushed.png" width="88" height="35"/>
-        <image name="button-confirm.png" width="16" height="5"/>
+        <image name="button-confirm.png" width="127" height="22"/>
         <image name="button-maximize.png" width="38" height="12"/>
         <image name="button-minimize.png" width="38" height="12"/>
         <image name="checkbox-checked.png" width="32" height="27"/>

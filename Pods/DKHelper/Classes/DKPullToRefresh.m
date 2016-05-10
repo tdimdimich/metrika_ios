@@ -87,7 +87,7 @@ static char dk_kvoContext;
         
         self.currentState = DKPullToRefreshStateLoading;
         [self cancelLoading];
-        [scrollView addObserver:self forKeyPath:@"delegate" options:NSKeyValueObservingOptionNew context:&dk_kvoContext];
+//        [scrollView addObserver:self forKeyPath:@"delegate" options:NSKeyValueObservingOptionNew context:&dk_kvoContext];
     }
 
     return self;
@@ -95,7 +95,7 @@ static char dk_kvoContext;
 
 - (void)dealloc {
     if (self.scrollView) {
-        [self.scrollView removeObserver:self forKeyPath:@"delegate" context:&dk_kvoContext];
+//        [self.scrollView removeObserver:self forKeyPath:@"delegate" context:&dk_kvoContext];
     }
 }
 

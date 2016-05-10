@@ -84,7 +84,7 @@ static const float kFilterMenuDuration = 0.3; // show/high filter menu animation
                      }
                      completion:^(BOOL finished) {
                          [[UIApplication sharedApplication] endIgnoringInteractionEvents];
-                         self.shadowView.hidden = self.view.left == 0;
+//                         self.shadowView.hidden = self.view.left == 0;
                      }];
 }
 
@@ -119,7 +119,7 @@ static const float kFilterMenuDuration = 0.3; // show/high filter menu animation
                     weakSelf.view.left = newX;
                 }
                 [recognizer setTranslation:CGPointMake(0, 0) inView:weakSelf.view];
-                weakSelf.shadowView.hidden = weakSelf.view.left == 0;
+//                weakSelf.shadowView.hidden = weakSelf.view.left == 0;
                 break;
             }
 
@@ -154,7 +154,7 @@ static const float kFilterMenuDuration = 0.3; // show/high filter menu animation
 
 - (void)viewDidLoad {
     [self configureGestureRecognizers];
-    self.shadowView.hidden = self.view.left == 0;
+//    self.shadowView.hidden = self.view.left == 0;
     self.view.layer.masksToBounds = YES;
 }
 

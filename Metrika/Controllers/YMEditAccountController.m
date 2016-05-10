@@ -67,7 +67,7 @@ static const int kBottomBarHeight = 55;
         self.navigationController.interactivePopGestureRecognizer.delegate = self;
     }
     
-    self.tableView.backgroundColor = [UIColor greenColor];
+//    self.tableView.backgroundColor = [UIColor greenColor];
 }
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
