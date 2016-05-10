@@ -11,7 +11,7 @@
 #import "GAIDictionaryBuilder.h"
 #import "GAITracker.h"
 #import "GAI.h"
-#import "YMConstants.h"
+#import "Config.h"
 
 static NSString *kShareUrl = @"https://itunes.apple.com/ru/app/millimetrika/id840372237?mt=8";
 

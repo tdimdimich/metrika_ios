@@ -6,8 +6,7 @@
 #import <BlocksKit/NSArray+BlocksKit.h>
 #import "YMVKActivityItem.h"
 #import "MBProgressHUD.h"
-#import "YMConstants.h"
-
+#import "Config.h"
 
 @interface YMVKActivityItem ()
 @property(nonatomic, strong) NSString *string;

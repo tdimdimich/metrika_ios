@@ -5,10 +5,6 @@
 // To change the template use AppCode | Preferences | File Templates.
 //
 
-static NSString *const kAPIBaseUrl = @"http://api-metrika.yandex.ru";
-#warning enter your AppIds
-static NSString *const kApplicationID = @"d491e61310ee43ed9440a9d21d457f3a";
-static NSString *const kVKAppId = @"YourVKAppId";
 static NSString *const kFontRegular = @"HelveticaNeue";
 static NSString *const kFontBold = @"HelveticaNeue-Bold";
 

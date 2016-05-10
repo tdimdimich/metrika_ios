@@ -8,7 +8,7 @@
 
 
 #import "YMWebViewController.h"
-#import "YMConstants.h"
+#import "Config.h"
 
 @interface YMWebViewController ()
 @property(weak, nonatomic) IBOutlet UIWebView *webView;

@@ -314,6 +314,7 @@
 		389222241B17D3C700871CA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/Default.png; sourceTree = "<group>"; };
 		38F657BD1B06543B005CB253 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		38F657BE1B06543B005CB253 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		55C6EDAD1CE213A00001DF66 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		6054DB2D113A452DBFD896D5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		741430008E60ADB7DD1F316B /* YMSourcesSummaryWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMSourcesSummaryWrapper.m; sourceTree = "<group>"; };
 		7414301C3CD3107F73260DDB /* YMPlotPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMPlotPoint.h; sourceTree = "<group>"; };
@@ -1169,6 +1170,7 @@
 			children = (
 				74143023186216063CEDDB3A /* YMConstants.m */,
 				741437449252E6CD74DFEFF6 /* YMConstants.h */,
+				55C6EDAD1CE213A00001DF66 /* Config.h */,
 				74143FDACA57161CABBA556A /* YMGradientColorValueTransformer.m */,
 				741431F2FFD6549643745DB5 /* YMGradientColorValueTransformer.h */,
 				74143430566D91FAACAEC50E /* UIColor+YMAdditions.m */,

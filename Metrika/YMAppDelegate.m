@@ -17,6 +17,7 @@
 #import "YMMenuController.h"
 #import "YMTrafficSummaryService.h"
 #import "YMConstants.h"
+#import "Config.h"
 #import "YMAppSettings.h"
 #import "YMUtils.h"
 #import "UIViewController+YMAdditions.h"

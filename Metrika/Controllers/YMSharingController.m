@@ -14,7 +14,7 @@
 #import <VK-ios-sdk/VKSdk.h>
 #import <BlocksKit/UIGestureRecognizer+BlocksKit.h>
 #import "YMSharingController.h"
-#import "YMConstants.h"
+#import "Config.h"
 
 static NSString *kShareUrl = @"https://itunes.apple.com/ru/app/millimetrika/id840372237?mt=8";
 
