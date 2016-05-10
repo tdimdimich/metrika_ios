@@ -22,19 +22,29 @@ static const int kMarginBetweenSummaryBrowsersCellElement = 11;
     self.firstElement = [YMSummaryBrowsersCellElement createView];
     self.secondElement = [YMSummaryBrowsersCellElement createView];
     self.thirdElement = [YMSummaryBrowsersCellElement createView];
+    self.firstElement.translatesAutoresizingMaskIntoConstraints = NO;
+    self.secondElement.translatesAutoresizingMaskIntoConstraints = NO;
+    self.thirdElement.translatesAutoresizingMaskIntoConstraints = NO;
     [self.contentView addSubview:self.firstElement];
     [self.contentView addSubview:self.secondElement];
     [self.contentView addSubview:self.thirdElement];
+    
+    NSDictionary *views = @{@"firstElement": self.firstElement, @"secondElement": self.secondElement, @"thirdElement": self.thirdElement};
+    NSDictionary *metrics = @{@"height": @(kSummaryBrowsersCellElementHeight), @"offset": @20};
+    [NSLayoutConstraint activateConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[firstElement]|" options:0 metrics:metrics views:views]];
+    [NSLayoutConstraint activateConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[secondElement]|" options:0 metrics:metrics views:views]];
+    [NSLayoutConstraint activateConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[thirdElement]|" options:0 metrics:metrics views:views]];
+    [NSLayoutConstraint activateConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-offset-[firstElement(height)]-offset-[secondElement(height)]-offset-[thirdElement(height)]" options:0 metrics:metrics views:views]];
 }
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    NSUInteger visibleElementsCount = (self.firstElement.hidden ? 0 : 1) + (self.secondElement.hidden ? 0 : 1) + (self.thirdElement.hidden ? 0 : 1);
-    NSUInteger marginsCount = visibleElementsCount > 0 ? visibleElementsCount - 1 : 0;
-    CGFloat totalHeight = kSummaryBrowsersCellElementHeight * visibleElementsCount + kMarginBetweenSummaryBrowsersCellElement * marginsCount;
-    self.firstElement.top = self.innerCenterY - totalHeight/2;
-    self.secondElement.top = self.firstElement.bottom + kMarginBetweenSummaryBrowsersCellElement;
-    self.thirdElement.top = self.secondElement.bottom + kMarginBetweenSummaryBrowsersCellElement;
+//    NSUInteger visibleElementsCount = (self.firstElement.hidden ? 0 : 1) + (self.secondElement.hidden ? 0 : 1) + (self.thirdElement.hidden ? 0 : 1);
+//    NSUInteger marginsCount = visibleElementsCount > 0 ? visibleElementsCount - 1 : 0;
+//    CGFloat totalHeight = kSummaryBrowsersCellElementHeight * visibleElementsCount + kMarginBetweenSummaryBrowsersCellElement * marginsCount;
+//    self.firstElement.top = self.innerCenterY - totalHeight/2;
+//    self.secondElement.top = self.firstElement.bottom + kMarginBetweenSummaryBrowsersCellElement;
+//    self.thirdElement.top = self.secondElement.bottom + kMarginBetweenSummaryBrowsersCellElement;
 }
 
 - (void)fillWithFirstName:(NSString *)firstName firstPercent:(CGFloat)firstPercent secondName:(NSString *)secondName secondPercent:(CGFloat)secondPercent thirdName:(NSString *)thirdName thirdPercent:(CGFloat)thirdPercent color:(UIColor *)color {
