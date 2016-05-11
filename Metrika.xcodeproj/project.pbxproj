@@ -1168,9 +1168,9 @@
 		741436F05208AC6C375C78EE /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				55C6EDAD1CE213A00001DF66 /* Config.h */,
 				74143023186216063CEDDB3A /* YMConstants.m */,
 				741437449252E6CD74DFEFF6 /* YMConstants.h */,
-				55C6EDAD1CE213A00001DF66 /* Config.h */,
 				74143FDACA57161CABBA556A /* YMGradientColorValueTransformer.m */,
 				741431F2FFD6549643745DB5 /* YMGradientColorValueTransformer.h */,
 				74143430566D91FAACAEC50E /* UIColor+YMAdditions.m */,

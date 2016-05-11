@@ -41,6 +41,10 @@
     self.counterTableController.delegate = self;
     [self addChildViewController:self.counterTableController];
     [self.containerView addSubview:self.counterTableController.view];
+        
+    NSDictionary *views = @{@"tableView": self.counterTableController.view};
+    [NSLayoutConstraint activateConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[tableView]|" options:0 metrics:nil views:views]];
+    [NSLayoutConstraint activateConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[tableView]|" options:0 metrics:nil views:views]];
 
     // Show label, if visible sites count equal to 0.
     self.informationLabel.hidden = YES;
@@ -58,9 +62,14 @@
     self.shadow.hidden = self.counterTableController.contentHeight <= self.containerView.height;
 
     if (!SYSTEM_VERSION_LESS_THAN_7) {
-        UIView *blackView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 20)];
+        UIView *blackView = [[UIView alloc] initWithFrame:CGRectZero];
+        blackView.translatesAutoresizingMaskIntoConstraints = NO;
         blackView.backgroundColor = [UIColor blackColor];
         [self.view addSubview:blackView];
+        
+        NSDictionary *views = NSDictionaryOfVariableBindings(blackView);
+        [NSLayoutConstraint activateConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[blackView]|" options:0 metrics:nil views:views]];
+        [NSLayoutConstraint activateConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[blackView(20)]" options:0 metrics:nil views:views]];
     }
 }
 

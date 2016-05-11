@@ -25,6 +25,7 @@ if (self.delegate && [self.delegate respondsToSelector:@selector(method)]) { \
 
 @interface YMCounterTableController ()
 @property(weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet YMCounterListCell *reuseCell;
 @property(nonatomic, strong) NSArray *counters;
 @property(nonatomic, strong) YMCounterInfo *updatedDateCounter;
 @property(nonatomic, strong) NSDate *updatedDateEnd;
@@ -63,6 +64,8 @@ if (self.delegate && [self.delegate respondsToSelector:@selector(method)]) { \
         blackView.backgroundColor = [UIColor blackColor];
         [self.view addSubview:blackView];
     }
+    self.reuseCell.backgroundColor = [UIColor clearColor];
+    self.reuseCell.contentView.backgroundColor = [UIColor clearColor];
 }
 
 - (CGFloat)contentHeight {
